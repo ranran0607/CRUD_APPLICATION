@@ -41,9 +41,17 @@
             </tbody>
         </table>
 
+        <?php 
+
+            if(isset($_GET['message'])) {
+                echo '<h6>' . htmlspecialchars($_GET['message'], ENT_QUOTES, 'UTF-8') . '</h6>';
+            }
+
+        ?>
+
 
         <!-- Modal -->
-<form action="">
+<form action="insert_data.php" method="post">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -63,13 +71,13 @@
             </div>
             <div class="form-group">
                 <label for="l_name">
-                    First Name
+                    Last Name
                 </label>
                 <input type="text" name="l_name" class="form-control">
             </div>
             <div class="form-group">
                 <label for="age">
-                    First Name
+                    Age
                 </label>
                 <input type="text" name="age" class="form-control">
             </div>
@@ -77,7 +85,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">ADD</button>
+        <button type="submit" class="btn btn-success" name="add_students" value="ADD">ADD</button>
       </div>
     </div>
   </div>

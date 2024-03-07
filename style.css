@@ -17,4 +17,11 @@
 
 .container {
     margin-top: 50px;
+    
+}
+
+h6{
+    font-size: 1rem;
+    color: RED;
+    TEXT-ALIGN: CENTER;
 }
