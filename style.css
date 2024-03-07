@@ -20,8 +20,10 @@
     
 }
 
-h6{
+/* h6{
     font-size: 1rem;
     color: RED;
     TEXT-ALIGN: CENTER;
-}
+} */
+
+/* the h6 in index.php can't be styled */
