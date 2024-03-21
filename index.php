@@ -49,6 +49,15 @@
 
         ?>
 
+        <?php 
+
+            if(isset($_GET['insert_msg'])) {
+                echo '<h6>' . htmlspecialchars($_GET['message'], ENT_QUOTES, 'UTF-8') . '</h6>';
+            }
+
+        ?>
+
+
 
         <!-- Modal -->
 <form action="insert_data.php" method="post">
